@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#formtuvan {
+    width: 850px;
+    height: 420px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    margin: 50px auto;
+}
+
+#formtv {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 100px;
+}
+
+input {
+    width: 500px;
+    margin-left: 50px;
+}
+
+#lname input {
+    margin-left: 52px;
+}
+
+#email input {
+    margin-left: 93px;
+}
+
+#sdt input {
+    margin-left: 93px;
+}
+
+.chung {
+    margin-top: 30px;
+
+}
+
+#nd textarea {
+    margin-left: 60px;
+   width: 500px;
+   float: left;
+}
+
+#keolen {
+    float: left;
+}
+#nd label {
+   padding-top: 50px;
+}
+
+#btnform button {
+    width: 100px;
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: 270px;
+}
+
+#btnform button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
