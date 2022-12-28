@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xulysanpham.css">
+    <title>zxe</title>
+</head>
+
+<body>
+    <div class="collapse">
+        <div class="left-column">
+            <h5>thay doi xe</h5>
+            <form action menthod="POST" enctype="multipart/form-data">
+                <label>ten xe</label>
+                <input type="text" class="form-control" name="tensanpham" placeholder="Tên sản phẩm">
+                <br>
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <label>thuong hieu</label>
+                <input type="text" class="form-control" name="thuonghieu" placeholder="Thuong hieu" />
+                <br />
+                <input type="submit" name="themsanpham" value="Thêm sản phẩm" class="btn btn-default">
+            </form>
+        </div>
+        <div class="details">
+            <div class="acentOrders">
+                <div class="cardHeader">
+                    <h2>Recent</h2>
+                    <a href="#" class="btn">View all</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Tên xe</td>
+                            <td>Thuong hieu</td>
+                            <td>gia xe</td>
+                            <td>dong co</td>
+                            <td>mau xe</td>
+                            <td>nam san xuat</td>
+                            <td>image</td>
+                        </tr>
+                    </thead>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>p90 zbc</td>
+                            <td>ferrari</td>
+                            <td>399,800$</td>
+                            <td>cz-x8</td>
+                            <td>den</td>
+                            <td>2023</td>
+                            <td>image</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="recentCustomers">
+                <div class="cardHeader">
+                    <h2> recentCustomers</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+<!--xulykhachhang-->
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+<body>
+    <table border="0">
+        <caption>
+            <h1>Danh sách khách hàng</h1>
+        </caption>
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Ngày sinh</th>
+            <th>Địa chỉ</th>
+            <th>Email</th>
+            <th>SDT</th>
+            <th>Ngay Gui</th>
+            <th>Noi Dung</th>
+        </tr>
+    </table>
+</body>
+
+</html>
+<?php
+$customerlist = array(
+    "1" => array("ten" => "Mai Văn Hoàn", 
+                 "ngaysinh" => "1983-08-20", 
+                 "diachi" => "Hà Nội",
+                "email" =>"@gmail.com",
+                  "sdt" => "",
+                "ngaygui"=>"",
+              "noidung" =>"" ),
+                 
+    "2" => array("ten" => "Nguyễn Văn Nam", 
+                 "ngaysinh" => "1983-08-20", 
+                 "diachi" => "Bắc Giang", 
+                 "email" =>"@gmail.com",
+                  "sdt" => "",
+                "ngaygui"=>"",
+              "noidung" =>"" 
+                ),
+    "3" => array("ten" => "Nguyễn Thái Hòa", 
+                 "ngaysinh" => "1983-08-21", 
+                 "diachi" => "Nam Định", 
+                 "email" =>"@gmail.com",
+                  "sdt" => "",
+                "ngaygui"=>"",
+              "noidung" =>"" 
+                ),
+    "4" => array("ten" => "Trần Đăng Khoa", 
+                  "ngaysinh" => "1983-08-22", 
+                  "diachi" => "Hà Tây",
+                  "email" =>"@gmail.com",
+                  "sdt" => "",
+                "ngaygui"=>"",
+              "noidung" =>""  
+                  ),
+    "5" => array("ten" => "Nguyễn Đình Thi", 
+                  "ngaysinh" => "1983-08-17", 
+                  "diachi" => "Hà Nội",
+                  "email" =>"@gmail.com",
+                  "sdt" => "",
+                "ngaygui"=>"",
+              "noidung" =>""  
+                 )
+   );
+?>
+<?php
+    foreach($customerlist as $key => $values){
+      echo "<tr>";
+      echo "<td>".$key."</td>";
+      echo "<td>".$values['ten']."</td>";
+      echo "<td>".$values['ngaysinh']."</td>";
+      echo "<td>".$values['diachi']."</td>";
+      echo "<td>".$values['email']."</td>";
+      echo "<td>".$values['sdt']."</td>";
+      echo "<td>".$values['ngaygui']."</td>";
+      echo "<td>".$values['noidung']."</td>";
+
+      echo "</tr>";
+    }
+?>
+
+
+
+
+
+
+
+
+
+<?php
+                        require_once('../db/connect.php');
+                        $query = "SELECT * FROM thuong_hieu_xe";
+                        $result = mysqli_query($conn,$query);
+                        $data = [];
+                        while($row = mysqli_fetch_array($result,1)) {
+                            $data[] = $row;
+                        };
+                       
+                        require_once('../db/close.php');
+$count1 = 0;
+                        for($i = 0; $i <count($data);$i++)
+                        {
+    echo '<tr>
+                        <td>'.$count1++.'
+                           <td>' . $data[$i]['year_car'].'</td>
+                           <td>' . $data[$i]['make_carID'].'</td>
+                           <td>' . $data[$i]['model_car'].'</td>
+                           <td>' . $data[$i]['ho_td'].'</td>
+                           <td>' . $data[$i]['ten_td'].'</td>
+                           <td>' . $data[$i]['email'].'</td>
+                           <td>' . $data[$i]['phone'].'</td>
+                           <td>' . $data[$i]['nd'].'</td>
+                           <td>' . $data[$i]['ngay_thangtd'].'</td>
+                           <tr>';
+                         };
+                      
+
+                        ?>
+
+
+require_once('../db/connect.php');
+        $query = ""INSERT INTO tbl_xe(ten_xe,thuong_hieu,gia_xe,dong_co,mau_xe,nam_sanxuat,sanpham_image) values ('$tenxe','$thuonghieu','$giaxe','$dongco','$mauxe','$namsanxuat','$hinhanh')";
+        $con->query($query);
