@@ -101,6 +101,18 @@ left: 300px;
 min-height: 100vh;
 transition: 0.5%;
  }
+ .right 
+ {
+    width: 70px;
+    padding-top: 100px;
+ }
+ .right .my-car img
+ {
+    width: 950px;
+    height: 500px;
+    margin: auto;
+    float: right;
+ }
 
 .topbar
 {

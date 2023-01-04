@@ -24,9 +24,62 @@
             .thumbnail img{
                 width:100%;
             }
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
         </style>
     </head>
     <body>
+    <div class="navbar">
+	    
+        <a   href="dashboard.php" class="active">
+            <span class="title"><ion-icon name="home-outline"></ion-icon>Admin</span>
+        </a>
+ 
+   
+        <a   href="testdrive.php">
+        <span class="title"><ion-icon name="clipboard-outline"></ion-icon>Test driver (current)</span></a>
+ 
+ 
+        <a   href="xulysanpham.php">
+        <span class="title"><ion-icon name="car-sport-outline"></ion-icon>Sản phẩm</span></a>
+
+    
+        <a   href="xulykhachhang.php">
+        <span class="title"><ion-icon name="person-outline"></ion-icon>Khách hàng</span></a>
+   
+      
+
+  </div>
+  <!--zxxxxxxxx-->
+  
         <table border="0">
           <caption><h2>Danh sách khách hàng</h2></caption>
           <tr>

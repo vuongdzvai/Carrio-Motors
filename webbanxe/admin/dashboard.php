@@ -31,32 +31,32 @@
                 <li>
                     <a href="#">
                         <span class="icon"></span>
-                        <p>Xin chào : <?php echo $_SESSION['dangnhap'] ?> <a href="?login=dangxuat">Đăng xuất</a></p>
+                        <span class="title">Xin chào : <?php echo $_SESSION['dangnhap'] ?></span>
                        
                     </a>
                 </li>
                 <li>
                     <a href="xulysanpham.php">
                         <span class="icon"></span>
-                        <span class="title">xe</span>
+                        <span class="title"><ion-icon name="car-sport-outline"></ion-icon> xe</span>
                     </a>
                 </li>
                 <li>
                     <a href="xulykhachhang.php">
                         <span class="icon"></span>
-                        <span class="title">Khach Hang</span>
+                        <span class="title"><ion-icon name="person-outline"></ion-icon> Khach Hang</span>
                     </a>
                 </li>
                 <li>
                     <a href="testdrive.php">
                         <span class="icon"></span>
-                        <span class="title">lai thu</span>
+                        <span class="title"><ion-icon name="clipboard-outline"></ion-icon> lai thu</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="index.php">
                         <span class="icon"></span>
-                        <span class="title">message</span>
+                        <span class="title"><ion-icon name="log-out-outline"></ion-icon> Dang Xuat</span>
                     </a>
                 </li>
             </ul>
@@ -68,7 +68,7 @@
             <div class="toggle">
                 <ion-icon name="menu-outline"></ion-icon>
             </div>
-            <!---search-->
+   
             <!-- <div class="search">
                 <label>
                     <input type="text" placeholder="search here" />
@@ -104,9 +104,6 @@
                     <div>
                         <div class="numbers">80</div>
                         <div class="cardName">sales</div>
-                    </div>
-                    <div class="iconBx">
-                        <ion-icon name="cart-outline"></ion-icon>
                     </div>
                 </div>
             </div>
