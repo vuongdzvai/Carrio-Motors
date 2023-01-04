@@ -21,7 +21,7 @@
         </div>
         <div id="menu">
             <div id="logo">
-               <a href="index.php"> <img src="./image/logo.png" alt=""> </a>
+               <a href="index.php"> <img src="./images/logo.png" alt=""> </a>
             </div>
         <div id="divmenu">
         <ul id="menu1">
@@ -29,7 +29,7 @@
             <li> <a href="./thanhphan/rollsroyce.php">ROLLS-ROYCE</a></li>
             <li><a href="./thanhphan/ferrari.php">FERRARI</a></li>
             <li><a href="./thanhphan/bmw.php">BMW</a></li>
-            <li> <a href="./thanhphan/formtuvan.php">CONTACT</a></li>
+            <li><a href="./thanhphan/testdrive.php">TEST DRIVE</a></li>
         </ul>
      </div>
             
@@ -37,7 +37,7 @@
         </div>
 
     <div id="content">
-        <div id="search" style="background-image: url(./image/imgcontent1.jpg);">
+        <div id="search" style="background-image: url(./images/imgcontent1.jpg);">
             <div id="form">
             <div id="title">
                 <h1>158 VEHICLES AVAILABLE</h1>
@@ -93,16 +93,16 @@
                 <div id="imgsl">
                     <div id="slimg1">
                         <?php
-                            require_once('./db/connect.php');
+                            require_once('./db1/connect.php');
                             $query = "SELECT * FROM tbl_slider where slider_active = '1'";
                             $result = mysqli_query($conn,$query);
                             $data = [];
                             while($row = mysqli_fetch_array($result,1)) {
                                 $data[] = $row;
                             };
-                            require_once('./db/close.php');
+                            require_once('./db1/close.php');
                             for($i=0;$i < count($data);$i++){
-                            echo '<img src="./image/'.$data[$i]['slider_image'].'" alt="">';
+                            echo '<img src="./images/'.$data[$i]['slider_image'].'" alt="">';
                             };
                     ?>
                      </div>
@@ -115,7 +115,7 @@
             <div id="slider23">
                 <div id="imgsl2">
                     <div id="slimg2">
-                    <img src="./image/slider2.jfif" alt="">
+                    <img src="./images/slider2.jfif" alt="">
                     </div>
                     <div id="btnsld2">
                     <button><span> GET APPRAISAL</span></button>
@@ -124,7 +124,7 @@
 
                 <div id="imgsl3">
                     <div id="slimg3">
-                    <img src="./image/slider3.jpg" alt="">
+                    <img src="./images/slider3.jpg" alt="">
                      </div>
                      <div id="btnsld3">
                     <button>VIEW GALLERY</button>
@@ -132,6 +132,38 @@
                 </div>
             </div>
      </div>
+    </div>
+
+    <div id="content6">
+        <div id="content61">
+            <div id="content61tt">
+                    <h2>EXPLORE BY MAKE</h2>
+            </div>
+            <div id="conten62a">
+                <div id="conten62a1" class="ct6"><a href="#"><h4>LAMBORGHINI</h4></a></div>
+                <div id="conten62a2" class="ct6"><a href="./thanhphan/rollsroyce.php"><h4>ROLLS-ROYCE</h4></a></div>
+                <div id="conten62a3" class="ct6"><a href="./thanhphan/ferrari.php"><h4>FERRARI</h4></a></div>
+                <div id="conten62a4" class="ct6"> <a href="#"><h4>PORSCHE</h4></a></div>
+                <div id="conten62a5" class="ct6"> <a href="#"><h4>BENTLEY</h4></a></div>
+                <div id="conten62a6" class="ct6"><a href="#"><h4>MCLAREN</h4></a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contten7" style = " background-image: url(./images/ct7.jpg);">
+        <div id="contten71">
+            <div id="trong">
+                
+            </div>
+            <div id="ndct7">
+                <h2>TEST DRIVE</h2>
+                <h3>THE BEST LUXURY BRANDS IN THE WORLD.</h3>
+                <p>Experience the beauty of our pre-owned inventory in the most exhilarating way possible - behind the wheel of one of our iconic models.</p>
+                <p>It is easy to register your interest. Simply complete the form below.</p>
+                <a href="./thanhphan/testdrive.php"> SCHEDULE TEST DRIVE </a>
+            </div>
+        </div>
     </div>
 
     <div id="content2">
@@ -143,7 +175,7 @@
         </div>
     </div>
 
-    <div id="content3" style="background-image: url(./image/noidung32.jpg);">
+    <div id="content3" style="background-image: url(./images/noidung32.jpg);">
         <div id="noidung3">
             <h1>SELL US YOUR CAR</h1>
             <h2>GET THE BEST VALUE FOR YOUR VEHICLE</h2>
@@ -197,7 +229,7 @@
     <div id="footer">
         <div id="footernd">
             <ul id="ulft">
-                <li> <img src="./image/logoft.png" alt=""> </li>
+                <li> <img src="./images/logoft.png" alt=""> </li>
                 <li> Copyright © 2022 by <a>DealerOn</a> | <a>Sitemap</a> | <a>Privacy</a> | Carrio Motor Cars | 5120 North State Road 7, Fort Lauderdale, FL 33309 | Sales: 954-733-7555 </li>
             </ul>
         </div>

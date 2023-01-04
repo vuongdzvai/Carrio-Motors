@@ -418,6 +418,7 @@ button {
     width: 100%;
     height: 453px;
     background-color: #141414;
+  
     
 }
 
@@ -661,4 +662,116 @@ button {
     height: 22px;
     margin-right: 10px;
     margin-top: 4px;
+}
+
+#content6 {
+    width: 100%;
+    height: 260px;
+    background-color: #141414;
+    border-top: 1px solid #555;
+}
+
+#content61tt {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;    
+    line-height: 1.1;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}
+
+#content61 {
+    width: 1410px;
+    height: 160px;
+    margin: 50px 39.6px;
+}
+
+.ct6 a {
+    width: 204.99px;
+    height: 81.8px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid rgba(225,225,225,.25);
+    background-color: rgba(255,255,255,.05);
+    margin: 0 15px;
+ 
+}
+
+.ct6 a:hover{
+  opacity: 0.6;
+}
+
+.ct6 a h4{
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+#contten7{
+    width: 100%;
+    height: 407.8px;
+    background-image: url(/image/ct7.jpg);
+
+}
+
+#contten71 {
+    width: 1440px;
+    height: 287.8px;
+    padding-top: 70px;
+   
+}
+
+#trong {
+    width: 50%;
+    float: left;
+}
+
+#ndct7 { 
+    width: 50%;
+    float: left;
+    margin-left: 720px;
+    padding: 0 15px;
+    color: #FFFFFF;
+}
+
+#ndct7 h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#ndct7 h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+#ndct7 p {
+    font-size: 16.8px;
+    margin-top: 16.8px;
+    margin-bottom: 33.6px;
+}
+
+
+
+#ndct7 a{
+   
+    height: 46px;
+    width: 212.5px;
+    font-size: 14px;
+    padding: 10px 16px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+
+
+#ndct7 a:hover {
+    cursor: pointer;
+    background-color: #FFFFFF !important;
+    color: #000;
 }

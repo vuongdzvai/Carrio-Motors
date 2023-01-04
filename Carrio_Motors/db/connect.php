@@ -1,6 +1,11 @@
 <?php
-    require_once('config.php');
+$con = mysqli_connect("localhost","root","","webcar");
 
-    $conn = mysqli_connect(HOST, USERNAME, PASSWORD,DB);
-    mysqli_set_charset($conn, 'utf8');
-?>
+// Check connection
+if (mysqli_connect_errno())
+{
+  echo "Failed to connect to MySQL: " . mysqli_connect_errno();
+}
+// Change character set to utf8
+mysqli_set_charset($con,"utf8");
+?>	

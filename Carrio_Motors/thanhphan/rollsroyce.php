@@ -17,12 +17,12 @@
             <ul id="ul1">
                 <li class="sales">Sales 954-733-7555</li>
                 <li class="ti-map-alt map"><span class="spanheader"> <a href="#">MAP</a></span></li>
-                <li class="ti-email email"> <span class="spanheader"> CONTACT </span></li>
+                <li class="ti-email email"> <a href="formtuvan.php"><span class="spanheader"> CONTACT </span></a></li>
             </ul>
         </div>
         <div id="menu">
             <div id="logo">
-            <a href="../index.php"><img src="../image/logo.png" alt=""></a> 
+            <a href="../index.php"><img src="../images/logo.png" alt=""></a> 
             </div>
         <div id="divmenu">
         <ul id="menu1">
@@ -30,7 +30,7 @@
             <li><a href="#">ROLLS-ROYCE</a></li>
             <li><a href="ferrari.php">FERRARI</a></li>
             <li><a href="bmw.php">BMW</a></li>
-            <li><a href="formtuvan.php">SUPPORT</a></li>
+            <li><a href="testdrive.php">TEST DRIVE</a></li>
         </ul>
      </div>
             
@@ -39,7 +39,7 @@
 
          <div id="contentrollall" style="margin-top: 130px;">
         <?php
-            require_once('../db/connect.php');
+            require_once('../db1/connect.php');
             $query = "SELECT * FROM tbl_xe where thuong_hieu ='1'";
             $result = mysqli_query($conn,$query);
             $data = [];
@@ -47,12 +47,12 @@
                 $data[] = $row;
             };
             
-            require_once('../db/close.php');
+            require_once('../db1/close.php');
             for($i = 0; $i < count($data);$i ++){
                 echo '<div id="contentroll" style="margin: 30px auto;">
                 <div id="left">
                     <div id="logo_item">
-                        <img src="../image/'.$data[$i]['sanpham_image'].'" alt="">
+                        <img src="../images/'.$data[$i]['sanpham_image'].'" alt="">
                     </div>
     
                     <div id="btn_logo">
@@ -114,7 +114,7 @@
 <div id="footer">
         <div id="footernd">
             <ul id="ulft">
-                <li> <img src="../image/logoft.png" alt=""> </li>
+                <li> <img src="../images/logoft.png" alt=""> </li>
                 <li> Copyright © 2022 by <a>DealerOn</a> | <a>Sitemap</a> | <a>Privacy</a> | Carrio Motor Cars | 5120 North State Road 7, Fort Lauderdale, FL 33309 | Sales: 954-733-7555 </li>
             </ul>
         </div>
